@@ -7,13 +7,10 @@
     <title>Document</title>
 </head>
 <body>
- <% if(visits == 1){ %>   
- <h1>Hola <%= name %></h1>
- <%}else{ %>
- <h1>Esta es tu visita <%= visits%>, <%= name %></h1>
- <% } %>
- <button class="btn btn-warning float-right mt-2" onclick="location.href='/session/logout'">
-    Desloguear
-</button>
+    <!-- login -->
+    <form action="/session/login" method="POST">
+        <input type="text" name="username" placeholder="username"><br>
+        <button type="submit"> Enviar</button>
+    </form>
 </body>
 </html>
